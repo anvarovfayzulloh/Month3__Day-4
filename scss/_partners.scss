@@ -50,8 +50,12 @@ form{
     outline: none;
     border: none;
     border-bottom: 1px solid #FFFFFF33;
-    padding-bottom: 12px    ;
-
+    padding-bottom: 12px;
+    font-family: $sato-r;
+    font-weight: 400px;
+    font-size: 18px;
+    line-height: 30.33px;
+    color: #ffffff;
     &::placeholder{
         font-family: $sato-r;
         font-size: 18px;
@@ -69,6 +73,11 @@ form{
     border-bottom: 1px solid #FFFFFF33;
     padding-bottom: 100px;
     margin-bottom: 45px;
+    font-family: $sato-r;
+    font-weight: 400px;
+    font-size: 18px;
+    line-height: 30.33px;
+    color: #ffffff;
 }
 .main__btn{
     @extend %button-style;
