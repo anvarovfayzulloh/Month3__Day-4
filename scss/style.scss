@@ -1,0 +1,21 @@
+@import "reset";
+@import "variables";
+@import "fonts";
+@import "nav";
+@import "hero";
+@import "content";
+@import "video";
+@import "products";
+@import "brands";
+@import "comments";
+@import "partners";
+@import "footer";
+
+.container{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+header{
+    background: #3D5DDB;
+}

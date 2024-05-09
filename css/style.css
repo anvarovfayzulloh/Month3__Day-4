@@ -1,0 +1,588 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v5.0.2 | 20191019
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+  display: none;
+}
+
+body {
+  line-height: 1;
+}
+
+menu, ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.main__btn {
+  cursor: pointer;
+  color: #FFFFFF;
+  font-family: "Satoshi-R";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30.33px;
+  text-align: left;
+  background-color: #171717;
+  padding: 12px 40px;
+  max-width: 162px;
+  white-space: nowrap;
+  border: none;
+  outline: none;
+}
+
+@font-face {
+  font-family: "Satoshi-M";
+  src: url(../fonts/Satoshi-Medium.woff2);
+}
+@font-face {
+  font-family: "Satoshi-B";
+  src: url(../fonts/Satoshi-Bold.woff2);
+}
+@font-face {
+  font-family: "Satoshi-R";
+  src: url(../fonts/Satoshi-Regular.woff2);
+}
+.nav__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 34px 150px 36px 150px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav {
+  border-bottom: 1px rgba(255, 255, 255, 0.2) solid;
+}
+nav .nav__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+}
+nav .nav__info .nav__text {
+  font-family: "Satoshi-M";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 27px;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.hero__wrapper {
+  padding: 45px 0px 0px 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 26px;
+}
+
+.hero__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero__title {
+  font-family: "Satoshi-B";
+  font-size: 85px;
+  font-weight: 700;
+  line-height: 88.82px;
+  text-align: left;
+  color: White;
+  max-width: 586px;
+}
+
+.hero__text {
+  font-family: "Satoshi-R";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30.33px;
+  text-align: left;
+  color: #FFFFFF;
+  padding: 42px 0px;
+  max-width: 393px;
+}
+
+.content__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 100px;
+  padding: 120px 150px;
+}
+
+.content__img {
+  background: rgb(242, 242, 242);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(242, 242, 242)), to(rgb(255, 255, 255)));
+  background: linear-gradient(0deg, rgb(242, 242, 242) 0%, rgb(255, 255, 255) 100%);
+}
+
+.content__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.content__text .content__title {
+  font-family: "Satoshi-B";
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 74.2px;
+  text-align: left;
+  color: #171717;
+}
+.content__text .text {
+  font-family: "Satoshi-R";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30.33px;
+  text-align: left;
+  color: #171717;
+  padding: 35px 0px;
+  max-width: 487px;
+}
+
+.video__wrapper {
+  background: url(../images/video.png) no-repeat;
+  max-width: 1439px;
+  min-height: 827px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.products__wrapper {
+  padding: 120px 150px;
+}
+
+.products__title {
+  font-family: "Satoshi-B";
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 75px;
+  text-align: left;
+  color: #171717;
+  max-width: 557px;
+}
+
+.products__cards {
+  padding-top: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.products__cards .card .product__name {
+  font-family: "Satoshi-B";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 34px;
+  text-align: left;
+  color: #171717;
+  padding: 32px 0px 18px 0px;
+}
+.products__cards .card .product__info {
+  font-family: "Satoshi-M";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30.33px;
+  text-align: left;
+  color: #171717;
+}
+.products__cards .card .product__address {
+  font-family: "Satoshi-R";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26.96px;
+  text-align: left;
+  color: #171717;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4px;
+}
+.products__cards .card .product__price {
+  font-family: "Satoshi-B";
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 29.26px;
+  text-align: left;
+  color: #3D5DDB;
+  padding-top: 15px;
+}
+
+.brands__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px 150px 190px 150px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.comments__wrapper {
+  padding: 0px 150px 120px 150px;
+}
+
+.first__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 100px;
+}
+
+.comments__title {
+  font-family: "Satoshi-B";
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 74.2px;
+  text-align: left;
+  color: #171717;
+}
+
+.users__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.users__title {
+  font-family: "Satoshi-M";
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 40.28px;
+  text-align: left;
+  color: #171717;
+  padding: 32px 0px;
+  max-width: 557px;
+}
+
+.users__comment {
+  font-family: "Satoshi-R";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30.33px;
+  text-align: left;
+  color: #171717;
+  padding: 0px 0px 38px 0px;
+  max-width: 491px;
+}
+
+.users__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 18px;
+}
+
+.users__name {
+  font-family: "Satoshi-M";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 25.44px;
+  text-align: left;
+  color: #171717;
+}
+
+.users__job {
+  font-family: "Satoshi-R";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26.96px;
+  text-align: left;
+  color: #171717;
+}
+
+.partners__wrapper {
+  padding-bottom: 270px;
+  position: relative;
+}
+
+.partners__info {
+  padding: 120px 0px 123px 150px;
+  background-color: #F6F6F6;
+  max-width: 1097px;
+}
+
+.partners__title {
+  font-family: "Satoshi-B";
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 74.2px;
+  text-align: left;
+  color: #171717;
+  max-width: 557px;
+}
+
+.partners__text {
+  max-width: 518px;
+  font-family: "Satoshi-R";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30.33px;
+  text-align: left;
+  color: #171717;
+  padding-top: 38px;
+}
+
+form {
+  background-color: #3D5DDB;
+  padding: 65px 85px 65px 65px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  min-width: 608px;
+  min-height: 673px;
+}
+
+.input_text {
+  font-family: "Satoshi-B";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 33.92px;
+  text-align: left;
+  color: #FFFFFF;
+  padding: 32px 0px;
+}
+
+.form__input {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 12px;
+}
+.form__input::-webkit-input-placeholder {
+  font-family: "Satoshi-R";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30.33px;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.8);
+}
+.form__input::-moz-placeholder {
+  font-family: "Satoshi-R";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30.33px;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.8);
+}
+.form__input:-ms-input-placeholder {
+  font-family: "Satoshi-R";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30.33px;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.8);
+}
+.form__input::-ms-input-placeholder {
+  font-family: "Satoshi-R";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30.33px;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.8);
+}
+.form__input::placeholder {
+  font-family: "Satoshi-R";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30.33px;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.form__message {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 100px;
+  margin-bottom: 45px;
+}
+
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 120px 150px 163px 150px;
+}
+
+.footer__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+}
+
+.footer__title {
+  font-family: "Satoshi-B";
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 58.3px;
+  text-align: left;
+  color: #171717;
+  max-width: 380px;
+}
+
+.footer__text {
+  font-family: "Satoshi-R";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30.33px;
+  text-align: left;
+  color: #171717;
+}
+
+.footer__list-t {
+  font-family: "Satoshi-B";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 33.92px;
+  text-align: left;
+  color: #171717;
+}
+
+.footer__list {
+  padding-top: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 12px;
+}
+.footer__list .list__link {
+  font-family: "Satoshi-R";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+  color: #171717;
+}
+
+.list__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 80px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+header {
+  background: #3D5DDB;
+}/*# sourceMappingURL=style.css.map */

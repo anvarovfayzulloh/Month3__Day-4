@@ -1,0 +1,59 @@
+.products__wrapper{
+    padding: 120px 150px;
+}
+.products__title{
+    font-family: $sato-b;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 75px;
+    text-align: left;  
+    color: #171717;
+    max-width: 557px;
+}
+.products__cards{
+    padding-top: 56px;
+    display: flex;
+    justify-content: space-between;
+
+    .card{
+
+
+        .product__name{
+            font-family: $sato-b;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 34px;
+            text-align: left;
+            color: #171717;
+            padding: 32px 0px 18px 0px;
+        }
+        .product__info{
+            font-family: $sato-m;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 30.33px;
+            text-align: left;
+            color: #171717;
+        }
+        .product__address{
+            font-family: $sato-r;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26.96px;
+            text-align: left;
+            color: #171717;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .product__price{
+            font-family: $sato-b;
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 29.26px;
+            text-align: left;
+            color: #3D5DDB;
+            padding-top: 15px;
+        }
+    }
+}

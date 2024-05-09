@@ -1,0 +1,75 @@
+.partners__wrapper{
+    padding-bottom: 270px;
+    position: relative;
+}
+.partners__info{
+    padding: 120px 0px 123px 150px;
+    background-color: #F6F6F6;
+    max-width: 1097px;
+}
+.partners__title{
+    font-family: $sato-b;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 74.2px;
+    text-align: left;
+    color: #171717;
+    max-width: 557px;
+}
+.partners__text{
+    max-width: 518px;
+    font-family: $sato-r;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30.33px;
+    text-align: left;
+    color: #171717;
+    padding-top: 38px;
+}
+form{
+    background-color: #3D5DDB;
+    padding: 65px 85px 65px 65px;   
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    min-width: 608px;
+    min-height: 673px;
+}
+.input_text{
+    font-family: $sato-b;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 33.92px;
+    text-align: left;
+    color: #FFFFFF;
+    padding: 32px 0px;
+}
+.form__input{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #FFFFFF33;
+    padding-bottom: 12px    ;
+
+    &::placeholder{
+        font-family: $sato-r;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30.33px;
+        text-align: left;
+        color: #FFFFFFCC;
+    }
+}
+.form__message{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #FFFFFF33;
+    padding-bottom: 100px;
+    margin-bottom: 45px;
+}
+.main__btn{
+    @extend %button-style;
+}

@@ -1,0 +1,32 @@
+.hero__wrapper{
+    padding: 45px 0px 0px 150px;
+    display: flex;
+    gap: 26px;
+}
+.hero__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero__title{
+    font-family: $sato-b;
+    font-size: 85px;
+    font-weight: 700;
+    line-height: 88.82px;
+    text-align: left;
+    color: White;
+    max-width: 586px;
+}
+.hero__text{
+    font-family: $sato-r;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30.33px;
+    text-align: left;
+    color: #FFFFFF;
+    padding: 42px 0px;
+    max-width: 393px;
+}
+.main__btn{
+   @extend %button-style
+}

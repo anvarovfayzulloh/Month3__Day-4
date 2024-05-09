@@ -1,0 +1,20 @@
+$sato-m: 'Satoshi-M';
+$sato-b: 'Satoshi-B';
+$sato-r: 'Satoshi-R';
+
+
+%button-style{
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: $sato-r;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30.33px;
+    text-align: left;
+    background-color: #171717;
+    padding: 12px 40px;
+    max-width: 162px;
+    white-space: nowrap;
+    border: none;
+    outline: none;
+}
